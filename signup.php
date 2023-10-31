@@ -5,12 +5,12 @@ include('includes/db_connection.php');
 error_reporting(0);
 
 if (isset($_POST['submit'])){
-    $client_email = $_POST['client_email'];
-    $client_name = $_POST['client_name'];
-    $client_number = $_POST['client_number'];
+    $Enter_email = $_POST['Enter_email'];
+    $Enter_name = $_POST['Enter_name'];
+    $Enter_number = $_POST['Enter_number'];
     $password = md5($_POST['password']);
     
-    $query = mysqli_query($connection, "insert into client_table (email, username, password) VALUES ('$client_email','$client_name','$password','$client_number')");
+    $query = mysqli_query($connection, "insert into client_table (email, username,number, password) VALUES ('$Enter_email','$Enter_name','$Enter_number''$password')");
     if ($query) {
         echo "<script> alert('User entered successfully');</script>";
     }
@@ -30,14 +30,14 @@ if (isset($_POST['submit'])){
     <h1>Signup Form</h1>
     <form action="" method="POST">
         <h2>Client Information:</h2>
-        <label for="client_email">Email:</label>
-        <input type="email" id="client_email" name="client_email" required><br><br>
-        <label for="client_name">User Name:</label>
-        <input type="text" id="client_name" name="client_name" required><br><br>
-        <label for="client_number">User Number:</label>
-        <input type="text" id="client_number" name="client_number" required><br><br>
+        <label for="Enter_email">Enter Email:</label>
+        <input type="email" id="Enter_email" name="Enter_email" required><br><br>
+        <label for="Enter_name">Enter Name:</label>
+        <input type="text" id="Enter_name" name="Enter_name" required><br><br>
+        <label for="Enter_number">Enter Number:</label>
+        <input type="text" id="Enter_number" name="Enter_number" required><br><br>
         
-        <label for="client_address">Password:</label>
+        <label for="Enter_address">Password:</label>
         <input type="text" id="password" name="password" required><br><br>
         
      
