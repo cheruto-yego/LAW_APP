@@ -24,10 +24,10 @@ if (isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
+    <title>Contact Us Form</title>
 </head>
 <body>
-    <h1>Signup Form</h1>
+    <h1>Contact Us Form</h1>
     <form action="" method="POST">
         <h2>Client Information:</h2>
         <label for="Enter_email">Enter Email:</label>
