@@ -10,7 +10,7 @@ if (isset($_POST['submit'])){
     $Enter_number = $_POST['Enter_number'];
     $password = md5($_POST['password']);
     
-    $query = mysqli_query($connection, "insert into client_table VALUES ('$Enter_email','$Enter_name','$password','$Enter_number')");
+    $query = mysqli_query($connection,"insert into client_table VALUES ('$Enter_email','$Enter_name','$password','$Enter_number')");
     if ($query) {
         echo "<script> alert('User entered successfully');</script>";
     }
