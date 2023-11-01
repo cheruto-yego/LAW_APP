@@ -27,7 +27,6 @@ if (isset($_POST['submit'])){
     <title>Contact Us Form</title>
 </head>
 <body>
-    <h2>Test</h2>
     <h1>Contact Us </h1>
     <form action="" method="POST">
         <h2>Client Information:</h2>
