@@ -56,7 +56,7 @@ if (isset($_POST['submit'])){
 
      
 
-        <input type="submit" name = "submit">
+        <input type="Contact us" name = "Contact us">
     </form>
 </body>
 </html>
